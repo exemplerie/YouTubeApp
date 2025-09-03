@@ -1,9 +1,17 @@
 import Foundation
 
-struct FullVideoVideo {
+enum VideoCategory: String, CaseIterable {
+    case mixes = "Mixes"
+    case music = "Music"
+    case graphic = "Graphic"
+    case animation = "Animation"
+}
+
+struct FullLengthVideo {
     let name: String
     let image: String
-    let chanelId: Int
+    let chanel: Chanel
     let views: Int
     let uploadedAt: Date
+    let category: VideoCategory
 }
