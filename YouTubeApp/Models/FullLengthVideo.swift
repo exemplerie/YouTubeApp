@@ -7,7 +7,8 @@ enum VideoCategory: String, CaseIterable {
     case animation = "Animation"
 }
 
-struct FullLengthVideo {
+struct FullLengthVideo: Hashable {
+    let id: String
     let name: String
     let image: String
     let chanel: Chanel

@@ -64,6 +64,7 @@ struct Design {
         static let collectionViewHeight: CGFloat = 280
         static let collectionViewSpacing: CGFloat = 15
         static let collectionViewItemSize = CGSize(width: 168, height: 280)
+        static let collectionViewBottomPadding: CGFloat = 18
     }
     
     enum FiltersBar {
@@ -131,68 +132,81 @@ struct Design {
     }
     
     enum FullLengthVideoCell {
-            static let padding: CGFloat = 12
-            static let previewHeight: CGFloat = 237
-            static let avatarSize: CGFloat = 40
-            static let labelRightMargin: CGFloat = 55
-            static let viewsTopMargin: CGFloat = 8
-            static let infoLabelHeight: CGFloat = 14
-            static let infoLabelSpacing: CGFloat = 4
-            static let settingsButtonRightMargin: CGFloat = 40
-            static let settingsButtonSize: CGFloat = 24
-            static let settingsIconName: String = "videoSettingsIcon"
-            static let settingsButtonBottomMargin: CGFloat = 24
-        }
+        static let padding: CGFloat = 12
+        static let previewHeight: CGFloat = 237
+        static let avatarSize: CGFloat = 40
+        static let labelRightMargin: CGFloat = 55
+        static let viewsTopMargin: CGFloat = 8
+        static let infoLabelHeight: CGFloat = 14
+        static let infoLabelSpacing: CGFloat = 4
+        static let settingsButtonRightMargin: CGFloat = 40
+        static let settingsButtonSize: CGFloat = 24
+        static let settingsIconName: String = "videoSettingsIcon"
+        static let settingsButtonBottomMargin: CGFloat = 24
+        
+        static let backgroundColor = UIColor.white
+        static let titleTextColor = UIColor.black
+        static let dataTextColor = UIColor.gray
+        static let settingsButtonTintColor = UIColor.black
+        static let previewPlaceholderColor = UIColor.lightGray
+        static let avatarPlaceholderColor = UIColor.systemGray4
+        
+    }
+    
+    enum CollectionSectionsIndex {
+        static let fullLengthFirst: Int = 0
+        static let shorts: Int = 1
+    }
     
     enum ShortsFeed {
-            static let backgroundColor: UIColor = .black
-            
-            static let collectionViewLineSpacing: CGFloat = 0
-            static let collectionViewIsPagingEnabled: Bool = true
-            
-            static let backButtonImageName: String = "backArrow"
-            static let backButtonTintColor: UIColor = .white
-            static let backButtonLeftPadding: CGFloat = 20
-            static let backButtonTopPadding: CGFloat = 5
-            static let backButtonSize: CGFloat = 32
-        }
+        static let backgroundColor: UIColor = .black
+        
+        static let collectionViewLineSpacing: CGFloat = 0
+        static let collectionViewIsPagingEnabled: Bool = true
+        
+        static let backButtonImageName: String = "backArrow"
+        static let backButtonTintColor: UIColor = .white
+        static let backButtonLeftPadding: CGFloat = 20
+        static let backButtonTopPadding: CGFloat = 5
+        static let backButtonSize: CGFloat = 32
+    }
     
     enum ShortsPlayer {
-            static let backgroundColor: UIColor = .black
-            static let titleColor: UIColor = .white
-            static let moreButtonImage = "shortsMoreIcon"
-            static let likeButtonImage = "likesIcon"
-            static let dislikeButtonImage = "dislikesIcon"
-            static let commentButtonImage = "commentsIcon"
-            static let shareButtonImage = "shareIcon"
-            static let audioIconImage = "shortsAudio"
-            
-            static let avatarSize: CGFloat = 30
-            static let avatarBorderColor: UIColor = .white
-            static let authorNameColor: UIColor = .white
-            static let subscribeButtonTextColor: UIColor = .white
-            static let subscribeButtonBackgroundColor: UIColor = .red
-            static let subscribeButtonCornerRadius: CGFloat = 4
-            static let subscribeButtonEdgeInsets = UIEdgeInsets(top: 6, left: 11, bottom: 6, right: 11)
-            static let avatarPlaceholder = "shortsAvatar"
-            static let dislikeLabelText = "Dislike"
-            static let shareLabelText = "Share"
-            
-            static let rightButtonSize: CGFloat = 36
-            static let rightPanelSpacing: CGFloat = 15
-            static let rightPanelRightPadding: CGFloat = 20
-            
-            static let imageTopPadding: CGFloat = 110
-            static let imageBottomPadding: CGFloat = 150
-            
-            static let authorContainerLeftPadding: CGFloat = 15
-            static let authorContainerBottomOffset: CGFloat = 10
-            
-            static let titleLeftPadding: CGFloat = 16
-            static let titleRightPadding: CGFloat = 90
-            static let titleBottomSpacing: CGFloat = 20
-            static let titleDefaultHeight: CGFloat = 90
-            
-            static let buttonLabelFont: UIFont = .systemFont(ofSize: 12)
-        }
+        static let backgroundColor: UIColor = .black
+        static let titleColor: UIColor = .white
+        static let moreButtonImage = "shortsMoreIcon"
+        static let likeButtonImage = "likesIcon"
+        static let dislikeButtonImage = "dislikesIcon"
+        static let commentButtonImage = "commentsIcon"
+        static let shareButtonImage = "shareIcon"
+        static let audioIconImage = "shortsAudio"
+        
+        static let avatarSize: CGFloat = 30
+        static let avatarBorderColor: UIColor = .white
+        static let authorNameColor: UIColor = .white
+        static let subscribeButtonTextColor: UIColor = .white
+        static let subscribeButtonBackgroundColor: UIColor = .red
+        static let subscribeButtonCornerRadius: CGFloat = 4
+        static let subscribeButtonEdgeInsets = UIEdgeInsets(top: 6, left: 11, bottom: 6, right: 11)
+        static let avatarPlaceholder = "shortsAvatar"
+        static let dislikeLabelText = "Dislike"
+        static let shareLabelText = "Share"
+        
+        static let rightButtonSize: CGFloat = 40
+        static let rightPanelSpacing: CGFloat = 15
+        static let rightPanelRightPadding: CGFloat = 20
+        
+        static let imageTopPadding: CGFloat = 110
+        static let imageBottomPadding: CGFloat = 150
+        
+        static let authorContainerLeftPadding: CGFloat = 15
+        static let authorContainerBottomOffset: CGFloat = 10
+        
+        static let titleLeftPadding: CGFloat = 16
+        static let titleRightPadding: CGFloat = 90
+        static let titleBottomSpacing: CGFloat = 20
+        static let titleDefaultHeight: CGFloat = 90
+        
+        static let buttonLabelFont: UIFont = .systemFont(ofSize: 12)
+    }
 }

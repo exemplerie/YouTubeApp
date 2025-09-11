@@ -1,7 +1,7 @@
 import UIKit
 
-class ShortsTableCell: UITableViewCell {
-    static let identifier = "ShortsTableCell"
+class ShortsSectionCell: UICollectionViewCell {
+    static let identifier = "ShortsSectionCell"
     
     private var shortsVideos: [ShortsVideo] = []
     var onShortSelected: ((ShortsVideo, Int) -> Void)?
@@ -26,9 +26,8 @@ class ShortsTableCell: UITableViewCell {
         return cv
     }()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        selectionStyle = .none
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupStrips()
         setupHeader()
         setupCollectionView()
@@ -113,7 +112,7 @@ class ShortsTableCell: UITableViewCell {
     }
 }
 
-extension ShortsTableCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ShortsSectionCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         shortsVideos.count
     }
